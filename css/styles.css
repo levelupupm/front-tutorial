@@ -252,7 +252,13 @@ h2 {
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
 }
-#elementos-html .grid .bloque{
+#elementos-css .grid {
+    justify-self: center;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+#elementos-html .grid .bloque,
+#elementos-css .grid .bloque{
     background-color: #F3F3F5;
     color: #808595;
     font-size: 60px;
@@ -261,7 +267,11 @@ h2 {
     padding: 120px 80px;
     transition: background-color .2s ease-in-out, color .2s ease-in-out;
 }
-#elementos-html .grid .bloque:hover{
+#elementos-css .grid .bloque {
+    padding: 120px 60px;
+}
+#elementos-html .grid .bloque:hover,
+#elementos-css .grid .bloque:hover{
     background-color: #E3FFE6;
     color: #3C4043;
 }
@@ -335,16 +345,19 @@ code .comment {
     font-weight: normal;
     color: #a3acb9;
 }
-code .tag {
+code .tag,
+.css-number{
     color: #a4cdfe;
 }
-code .string {
+code .string,
+.css-medida{
     color: #85d996;
 }
 code .symbol {
     color: #fbb5b2;
 }
-code .number{
+code .number,
+.css-selector{
     color: #f8b886;
 }
 .files-container{
@@ -422,4 +435,7 @@ code span{
 }
 .screen .body{
     margin: 8px;
+}
+#grafico-css{
+    color: #808595;
 }
