@@ -1,0 +1,267 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    max-width: 100vw;
+    height: auto;
+    font-family: 'Roboto', sans-serif;
+    color: #3C4043;
+}
+section {
+    width: 100%;
+    overflow: hidden;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+#front-principal {
+    background: #C8E6FC;
+    color: #0A1E46;
+    height: 100%;
+    border-radius: 9px;
+    align-items: center;
+    overflow: hidden;
+}
+.grid{
+    display: grid;
+}
+.c12 {
+    grid-template-columns: repeat(12, 1fr);
+    gap: 24px;
+}
+section img {
+    max-width: 100%;
+}
+
+#texto-inicio {
+    grid-column-start: 2;
+    grid-column-end: span 4;
+    padding: 80px 0;
+}
+
+#imagen-front {
+    grid-column-start: 7;
+    grid-column-end: span 5;
+    padding: 80px 0;
+}
+#imagen-front img {
+    border-radius: 9px;
+    box-shadow: 0 3px 6px rgb(0 0 0 / 16%);
+}
+.titulo-pequeño {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    letter-spacing: .25px;
+    margin-bottom: 12px;
+}
+h1 {
+    font-size: 60px;
+    line-height: 68px;
+    letter-spacing: -2px;
+    font-weight: 700;
+}
+#texto-inicio .explicacion {
+    margin-top: 16px;
+}
+.explicacion {
+    font-size: 16px;
+    line-height: 24px;
+}
+h2 {
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -0.5px;
+    font-weight: 700;
+    color: #3c4043;
+    margin-bottom: 40px;
+}
+.center{
+    text-align: center;
+    justify-self: center;
+}
+#lenguajes .mitad1{
+    background-color: #F3F3F5;
+
+}
+#lenguajes .mitad1 .explicacion-grande{
+    color: #808595;
+}
+#lenguajes .mitad2{
+    background-color: #E3FFE6;
+    color: #3C4043;
+}
+#lenguajes .mitad3 {
+    background-color: #FEF9E4;
+    color: #3C4043;
+}
+.explicacion-grande {
+    font-weight: 700;
+    font-size: 40px;
+}
+#lenguajes .grid{
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+#lenguajes .bloque {
+    padding: 40px 60px;
+}
+#lenguajes .titulo-pequeño{
+    font-size: 20px;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+.bloque{
+    border-radius: 9px;
+}
+#lenguajes span.color{
+    animation: animationColor 3s ease-in-out infinite forwards;
+    animation-direction: alternate;
+}
+@keyframes animationColor {
+    0%{
+        color: #3C4043;
+    }
+    30% {
+        color: #3C4043;
+    }
+    70% {
+        color: #3474E0;
+    }
+    100%{
+        color: #3474E0;
+    }
+}
+#lenguajes span.tamaño{
+    animation: animationTamanio 3s ease-in-out infinite alternate;
+}
+@keyframes animationTamanio {
+    0%{
+        font-size: 40px;
+    }
+    30%{
+        font-size: 40px;
+    }
+    70%{
+        font-size: 20px;
+    }
+    100%{
+        font-size: 20px;
+    }
+}
+#lenguajes .estructura{
+    position: relative;
+}
+#lenguajes .estructuraUp {
+    animation: animationUp 3s ease-in-out infinite alternate;
+}
+#lenguajes .estructuraDown{
+    animation: animationDown 3s ease-in-out infinite alternate;
+}
+@keyframes animationUp {
+    0%{
+        top: 0px;
+    }
+    30% {
+        top: 0px;
+    }
+    70% {
+
+        top: -9px;
+    }
+    100%{
+        top: -9px;
+    }
+}
+@keyframes animationDown {
+    0%{
+        top: 0px;
+    }
+    30% {
+        top: 0px;
+    }
+    70% {
+        top: 9px;
+    }
+    100%{
+        top: 9px;
+    }
+}
+.separator {
+    height: 80px;
+}
+.header-multi-section{
+    position: sticky;
+    top: 0;
+    padding: 10px 80px;
+    font-size: 30px;
+    background-color: #ffffff;
+}
+#esquema-html {
+    margin-top: 40px;
+}
+.html-element {
+    color: #3474e0;
+}
+.attr-html {
+    color: #fb586c;
+}
+.string-html {
+    color: #6cda6d;
+}
+.grafico{
+    font-size: 80px;
+}
+.grafica-atributos {
+    font-weight: 400;
+    letter-spacing: -1px;
+    text-align: left;
+}
+#attr-grafico{
+    width: 300px;
+}
+#attr-grafico:before{
+    content: 'id';
+    width: 300px;
+    animation: contenido-atributo 3s infinite alternate;
+}
+@keyframes contenido-atributo {
+    0%{
+        content: 'id';
+    }
+    33% {
+         content: 'class';
+    }
+    66%{
+        content: 'style';
+    }
+    100%{
+        content: 'custom'
+    }
+}
+.single-line{
+    display: block;
+}
+.indent{
+    padding-left: 80px;
+}
+#elementos-html .grid{
+    justify-self: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+#elementos-html .grid .bloque{
+    background-color: #F3F3F5;
+    color: #808595;
+    font-size: 60px;
+    font-weight: 700;
+    text-align: center;
+    padding: 120px 80px;
+    transition: background-color .2s ease-in-out, color .2s ease-in-out;
+}
+#elementos-html .grid .bloque:hover{
+    background-color: #E3FFE6;
+    color: #3C4043;
+}
