@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <script src="js/events.js" defer></script>
 </head>
 <body>
     <section>
@@ -20,7 +22,7 @@
                 <p class="explicacion">En este taller guiado aprenderéis los principios de diseño de la web moderna y realizaremos un diseño de un login responsive, accesible y con todas las herramientas aprendidas en el taller.</p>
             </div>
             <div id="imagen-front" class="mitad">
-                <img src="img/cabecera.webp">
+                <img src="img/cabecera.webp" alt="Diseño de login de la biblioteca de LevelUp">
             </div>
         </div>
     </section>
@@ -106,28 +108,8 @@
             <h2 class="center">Elementos principales</h2>
             <div class="grid">
                 <div class="bloque">
-                    <p><span><</span>h1></p>
-                    <p class="explicacion-grande">Cabecera de nivel 1</p>
-                </div>
-                <div class="bloque">
-                    <p><span><</span>h2></p>
-                    <p class="explicacion-grande">Cabecera de nivel 2</p>
-                </div>
-                <div class="bloque">
-                    <p><span><</span>h3></p>
-                    <p class="explicacion-grande">Cabecera de nivel 3</p>
-                </div>
-                <div class="bloque">
-                    <p><span><</span>h4></p>
-                    <p class="explicacion-grande">Cabecera de nivel 4</p>
-                </div>
-                <div class="bloque">
-                    <p><span><</span>h5></p>
-                    <p class="explicacion-grande">Cabecera de nivel 5</p>
-                </div>
-                <div class="bloque">
-                    <p><span><</span>h6></p>
-                    <p class="explicacion-grande">Cabecera de nivel 6</p>
+                    <p><span><</span>h1-6></p>
+                    <p class="explicacion-grande">Cabeceras</p>
                 </div>
                 <div class="bloque">
                     <p><span><</span>p></p>
@@ -152,10 +134,6 @@
                 <div class="bloque">
                     <p><span><</span>img></p>
                     <p class="explicacion-grande">Etiqueta para insertar imagenes</p>
-                </div>
-                <div class="bloque">
-                    <p><span><</span>video></p>
-                    <p class="explicacion-grande">Etiqueta para insertar videos</p>
                 </div>
                 <div class="bloque">
                     <p><span><</span>audio></p>
@@ -187,7 +165,7 @@
                         <li><button class="active">index.html</button></li>
                     </ul>
                 </div>
-                <pre>
+                <pre class="show">
                     <code>
                         <div class="line">
                             <span class="line-number"></span>
@@ -333,7 +311,7 @@
                                 <li><button class="active">index.html</button></li>
                             </ul>
                         </div>
-                        <pre>
+                        <pre class="show">
                             <code>
                                 <div class="line">
                                     <span class="line-number"></span>
@@ -580,6 +558,15 @@
                                         </span>
                                     </span>
                                 </div>
+                                <div class="line">
+                                    <span class="line-number"></span>
+                                    <span class="language-html">
+                                        <span class="token tag">
+                                            <span><</span>
+                                            <span>/html></span>
+                                        </span>
+                                    </span>
+                                </div>
                             </code>
                         </pre>
                     </figure>
@@ -605,7 +592,7 @@
                                 <li><button class="active">index.html</button></li>
                             </ul>
                         </div>
-                        <pre>
+                        <pre class="show">
                             <code>
                                 <div class="line">
                                     <span class="line-number"></span>
@@ -857,6 +844,15 @@
                                         </span>
                                     </span>
                                 </div>
+                                <div class="line">
+                                    <span class="line-number"></span>
+                                    <span class="language-html">
+                                        <span class="token tag">
+                                            <span><</span>
+                                            <span>/html></span>
+                                        </span>
+                                    </span>
+                                </div>
                             </code>
                         </pre>
                     </figure>
@@ -884,7 +880,7 @@
                                 <li><button class="active">index.html</button></li>
                             </ul>
                         </div>
-                        <pre>
+                        <pre class="show">
                             <code>
                                 <div class="line">
                                     <span class="line-number"></span>
@@ -1298,19 +1294,21 @@
                                         </span>
                                     </span>
                                 </div>
-                                <!--
-                            <p></p>
-                            <input type="checkbox" name="check" id="form-check">
-                            <label for="form-check">CheckBox</label>
-                            <p></p>
-                            <input type="button" value="Soy un boton">
-                        </form>-->
                                 <div class="line">
                                     <span class="line-number"></span>
                                     <span class="language-html">
                                         <span class="token tag">
                                             <span><</span>
                                             <span>/body></span>
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="line">
+                                    <span class="line-number"></span>
+                                    <span class="language-html">
+                                        <span class="token tag">
+                                            <span><</span>
+                                            <span>/html></span>
                                         </span>
                                     </span>
                                 </div>
@@ -1391,6 +1389,993 @@
                     <p class="explicacion-grande">milímetros</p>
                 </div>
             </div>
+        </section>
+        <section id="estructura-css">
+            <h2 class="center">Estructura de un elemnto en la web</h2>
+            <div class="grid">
+                <div class="flex bloque">
+                    <span id="atributo-css-animado" class="explicacion-grande"></span>
+                </div>
+                <div id="css-margin" class="css-structure center">
+                    <div id="css-border" class="css-structure">
+                        <div id="css-padding" class="css-structure flex">
+                            <p class="explicacion-grande">contenido</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="separator"></div>
+            <div class="separator"></div>
+        </section>
+        <section id="disposicion-css">
+            <h2 class="center">Disposicion de los elementos</h2>
+            <div class="grid">
+                <div>
+                    <p class="display-type">BLOCK</p>
+                    <p class="explicacion-grande">Ocupa todo el ancho de la pantalla. Es la disposicion por defecto de la mayoria de elementos</p>
+                    <figure class="coding">
+                        <div class="files-container">
+                            <ul>
+                                <li><button class="active">index.html</button></li>
+                                <li><button>style.css</button></li>
+                            </ul>
+                        </div>
+                        <pre class="show" data-label="index.html">
+                            <code>
+                                <div class="line">
+                                    <span class="line-number"></span>
+                                    <span class="language-html">
+                                        <span class="token comment"><span><</span>!DOCTYPE html></span>
+                                    </span>
+                                </div>
+                                <div class="line">
+                                    <span class="line-number"></span>
+                                    <span class="language-html">
+                                        <span class="token tag">
+                                            <span><</span>
+                                            <span>html</span>
+                                            <span class="attr-html"> language</span>
+                                            <span>=</span>
+                                            <span class="string">"es"</span>
+                                            <span>></span>
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="line">
+                                    <span class="line-number"></span>
+                                    <span class="language-html">
+                                        <span class="token tag">
+                                            <span><</span>
+                                            <span>head></span>
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="line">
+                                    <span class="line-number"></span>
+                                    <span class="language-html">
+                                        <span class="token tag">
+                                            <span>  <</span>
+                                            <span>meta </span>
+                                            <span class="attr-html">charset</span>
+                                            <span>=</span>
+                                            <span class="string">"UTF-8"</span>
+                                            <span>></span>
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="line">
+                                    <span class="line-number"></span>
+                                    <span class="language-html">
+                                        <span class="token tag">
+                                            <span>  <</span>
+                                            <span>meta </span>
+                                            <span class="attr-html">http-equiv</span>
+                                            <span>=</span>
+                                            <span class="string">"X-UA-Compatible"</span>
+                                            <span class="attr-html"> content</span>
+                                            <span>=</span>
+                                            <span class="string">"IE=edge"</span>
+                                            <span>></span>
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="line">
+                                    <span class="line-number"></span>
+                                    <span class="language-html">
+                                        <span class="token tag">
+                                            <span>  <</span>
+                                            <span>meta </span>
+                                            <span class="attr-html">name</span>
+                                            <span>=</span>
+                                            <span class="string">"viewport"</span>
+                                            <span class="attr-html"> content</span>
+                                            <span>=</span>
+                                            <span class="string">"width=device-width, initial-scale=1.0"</span>
+                                            <span>></span>
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="line">
+                                    <span class="line-number"></span>
+                                    <span class="language-html">
+                                        <span class="token tag">
+                                            <span>  <</span>
+                                            <span>title></span>
+                                        </span>
+                                        <span>LevelUp Front TUTORIAL</span>
+                                        <span class="token tag">
+                                            <span><</span>
+                                            <span>/title></span>
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="line">
+                                    <span class="line-number"></span>
+                                    <span class="language-html">
+                                        <span class="token tag">
+                                            <span><</span>
+                                            <span>/head></span>
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="line">
+                                    <span class="line-number"></span>
+                                    <span class="language-html">
+                                        <span class="token tag">
+                                            <span><</span>
+                                            <span>body></span>
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="line">
+                                    <span class="line-number"></span>
+                                    <span class="language-html">
+                                         <span class="token tag">
+                                            <span>  <</span>
+                                            <span>h1></span>
+                                        </span>
+                                        <span>Titulo con display Block</span>
+                                        <span class="token tag">
+                                            <span><</span>
+                                            <span>/h1></span>
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="line">
+                                    <span class="line-number"></span>
+                                    <span class="language-html">
+                                         <span class="token tag">
+                                            <span>  <</span>
+                                            <span>p></span>
+                                        </span>
+                                        <span>Parrafo con display Block. El parrafo normalmente ocupa mas que el titulo.</span>
+                                        <span class="token tag">
+                                            <span><</span>
+                                            <span>/p></span>
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="line">
+                                    <span class="line-number"></span>
+                                    <span class="language-html">
+                                        <span class="token tag">
+                                            <span><</span>
+                                            <span>/body></span>
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="line">
+                                    <span class="line-number"></span>
+                                    <span class="language-html">
+                                        <span class="token tag">
+                                            <span><</span>
+                                            <span>/html></span>
+                                        </span>
+                                    </span>
+                                </div>
+                            </code>
+                        </pre>
+                        <pre data-label="style.css">
+                            <code>
+                                <div class="line">
+                                    <span class="line-number"></span>
+                                    <span class="language-css">
+                                        <span class="token"><span class="css-selector">div</span> {</span>
+                                    </span>
+                                </div>
+                                <div class="line">
+                                    <span class="line-number"></span>
+                                    <span class="language-css">
+                                        <span class="token">    background-color: <span class="css-number">#85d996</span>;</span>
+                                    </span>
+                                </div>
+                                <div class="line">
+                                    <span class="line-number"></span>
+                                    <span class="language-css">
+                                        <span class="token">}</span>
+                                    </span>
+                                </div>
+                                <div class="line">
+                                    <span class="line-number"></span>
+                                    <span class="language-css">
+                                        <span class="token"><span class="css-selector">p</span> {</span>
+                                    </span>
+                                </div>
+                                <div class="line">
+                                    <span class="line-number"></span>
+                                    <span class="language-css">
+                                        <span class="token">    background-color: <span class="css-number">#fb586c</span>;</span>
+                                    </span>
+                                </div>
+                                <div class="line">
+                                    <span class="line-number"></span>
+                                    <span class="language-css">
+                                        <span class="token">}</span>
+                                    </span>
+                                </div>
+                            </code>
+                        </pre>
+                    </figure>
+                </div>
+                <div class="screen">
+                    <div class="body">
+                        <h1 style="background-color: #85d996">Titulo con display Block</h1>
+                        <p style="background-color: #fb586c">Parrafo con display Block. El parrafo normalmente ocupa mas que el titulo.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="separator"></div>
+            <div class="separator"></div>
+            <div class="grid">
+                <div>
+                    <p class="display-type">TABLE</p>
+                    <p class="explicacion-grande">Ocupa el ancho que ocupe el contenido</p>
+                    <figure class="coding">
+                        <div class="files-container">
+                            <ul>
+                                <li><button class="active">index.html</button></li>
+                                <li><button>style.css</button></li>
+                            </ul>
+                        </div>
+                        <pre class="show" data-label="index.html">
+                            <code>
+                                <div class="line">
+                                    <span class="line-number"></span>
+                                    <span class="language-html">
+                                        <span class="token comment"><span><</span>!DOCTYPE html></span>
+                                    </span>
+                                </div>
+                                <div class="line">
+                                    <span class="line-number"></span>
+                                    <span class="language-html">
+                                        <span class="token tag">
+                                            <span><</span>
+                                            <span>html</span>
+                                            <span class="attr-html"> language</span>
+                                            <span>=</span>
+                                            <span class="string">"es"</span>
+                                            <span>></span>
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="line">
+                                    <span class="line-number"></span>
+                                    <span class="language-html">
+                                        <span class="token tag">
+                                            <span><</span>
+                                            <span>head></span>
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="line">
+                                    <span class="line-number"></span>
+                                    <span class="language-html">
+                                        <span class="token tag">
+                                            <span>  <</span>
+                                            <span>meta </span>
+                                            <span class="attr-html">charset</span>
+                                            <span>=</span>
+                                            <span class="string">"UTF-8"</span>
+                                            <span>></span>
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="line">
+                                    <span class="line-number"></span>
+                                    <span class="language-html">
+                                        <span class="token tag">
+                                            <span>  <</span>
+                                            <span>meta </span>
+                                            <span class="attr-html">http-equiv</span>
+                                            <span>=</span>
+                                            <span class="string">"X-UA-Compatible"</span>
+                                            <span class="attr-html"> content</span>
+                                            <span>=</span>
+                                            <span class="string">"IE=edge"</span>
+                                            <span>></span>
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="line">
+                                    <span class="line-number"></span>
+                                    <span class="language-html">
+                                        <span class="token tag">
+                                            <span>  <</span>
+                                            <span>meta </span>
+                                            <span class="attr-html">name</span>
+                                            <span>=</span>
+                                            <span class="string">"viewport"</span>
+                                            <span class="attr-html"> content</span>
+                                            <span>=</span>
+                                            <span class="string">"width=device-width, initial-scale=1.0"</span>
+                                            <span>></span>
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="line">
+                                    <span class="line-number"></span>
+                                    <span class="language-html">
+                                        <span class="token tag">
+                                            <span>  <</span>
+                                            <span>title></span>
+                                        </span>
+                                        <span>LevelUp Front TUTORIAL</span>
+                                        <span class="token tag">
+                                            <span><</span>
+                                            <span>/title></span>
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="line">
+                                    <span class="line-number"></span>
+                                    <span class="language-html">
+                                        <span class="token tag">
+                                            <span><</span>
+                                            <span>/head></span>
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="line">
+                                    <span class="line-number"></span>
+                                    <span class="language-html">
+                                        <span class="token tag">
+                                            <span><</span>
+                                            <span>body></span>
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="line">
+                                    <span class="line-number"></span>
+                                    <span class="language-html">
+                                         <span class="token tag">
+                                            <span>  <</span>
+                                            <span>h1></span>
+                                        </span>
+                                        <span>Titulo con display Block</span>
+                                        <span class="token tag">
+                                            <span><</span>
+                                            <span>/h1></span>
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="line">
+                                    <span class="line-number"></span>
+                                    <span class="language-html">
+                                         <span class="token tag">
+                                            <span>  <</span>
+                                            <span>p></span>
+                                        </span>
+                                        <span>Parrafo con display Block. El parrafo normalmente ocupa mas que el titulo.</span>
+                                        <span class="token tag">
+                                            <span><</span>
+                                            <span>/p></span>
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="line">
+                                    <span class="line-number"></span>
+                                    <span class="language-html">
+                                        <span class="token tag">
+                                            <span><</span>
+                                            <span>/body></span>
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="line">
+                                    <span class="line-number"></span>
+                                    <span class="language-html">
+                                        <span class="token tag">
+                                            <span><</span>
+                                            <span>/html></span>
+                                        </span>
+                                    </span>
+                                </div>
+                            </code>
+                        </pre>
+                        <pre data-label="style.css">
+                            <code>
+                                <div class="line">
+                                    <span class="line-number"></span>
+                                    <span class="language-css">
+                                        <span class="token"><span class="css-selector">div</span> {</span>
+                                    </span>
+                                </div>
+                                <div class="line">
+                                    <span class="line-number"></span>
+                                    <span class="language-css">
+                                        <span class="token">    display: <span class="css-medida">table</span>;</span>
+                                    </span>
+                                </div>
+                                <div class="line">
+                                    <span class="line-number"></span>
+                                    <span class="language-css">
+                                        <span class="token">    background-color: <span class="css-number">#85d996</span>;</span>
+                                    </span>
+                                </div>
+                                <div class="line">
+                                    <span class="line-number"></span>
+                                    <span class="language-css">
+                                        <span class="token">}</span>
+                                    </span>
+                                </div>
+                                <div class="line">
+                                    <span class="line-number"></span>
+                                    <span class="language-css">
+                                        <span class="token"><span class="css-selector">p</span> {</span>
+                                    </span>
+                                </div>
+                                <div class="line">
+                                    <span class="line-number"></span>
+                                    <span class="language-css">
+                                        <span class="token">    display: <span class="css-medida">table</span>;</span>
+                                    </span>
+                                </div>
+                                <div class="line">
+                                    <span class="line-number"></span>
+                                    <span class="language-css">
+                                        <span class="token">    background-color: <span class="css-number">#fb586c</span>;</span>
+                                    </span>
+                                </div>
+                                <div class="line">
+                                    <span class="line-number"></span>
+                                    <span class="language-css">
+                                        <span class="token">}</span>
+                                    </span>
+                                </div>
+                            </code>
+                        </pre>
+                    </figure>
+                </div>
+                <div class="screen">
+                    <div class="body">
+                        <h1 style="background-color: #85d996; display: table">Titulo con display Table</h1>
+                        <p style="background-color: #fb586c; display: table">Parrafo con display Block. El parrafo normalmente ocupa mas que el titulo.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="separator"></div>
+            <div class="separator"></div>
+            <div class="grid">
+                <div>
+                    <p class="display-type">FLEX</p>
+                    <p class="explicacion-grande">Un elemento con display flex, colocará a sus elementos hijos en una misma fila, adaptando sus anchos</p>
+                    <figure class="coding">
+                        <div class="files-container">
+                            <ul>
+                                <li><button class="active">index.html</button></li>
+                                <li><button>style.css</button></li>
+                            </ul>
+                        </div>
+                        <pre class="show" data-label="index.html">
+                            <code>
+                                <div class="line">
+                                    <span class="line-number"></span>
+                                    <span class="language-html">
+                                        <span class="token comment"><span><</span>!DOCTYPE html></span>
+                                    </span>
+                                </div>
+                                <div class="line">
+                                    <span class="line-number"></span>
+                                    <span class="language-html">
+                                        <span class="token tag">
+                                            <span><</span>
+                                            <span>html</span>
+                                            <span class="attr-html"> language</span>
+                                            <span>=</span>
+                                            <span class="string">"es"</span>
+                                            <span>></span>
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="line">
+                                    <span class="line-number"></span>
+                                    <span class="language-html">
+                                        <span class="token tag">
+                                            <span><</span>
+                                            <span>head></span>
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="line">
+                                    <span class="line-number"></span>
+                                    <span class="language-html">
+                                        <span class="token tag">
+                                            <span>  <</span>
+                                            <span>meta </span>
+                                            <span class="attr-html">charset</span>
+                                            <span>=</span>
+                                            <span class="string">"UTF-8"</span>
+                                            <span>></span>
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="line">
+                                    <span class="line-number"></span>
+                                    <span class="language-html">
+                                        <span class="token tag">
+                                            <span>  <</span>
+                                            <span>meta </span>
+                                            <span class="attr-html">http-equiv</span>
+                                            <span>=</span>
+                                            <span class="string">"X-UA-Compatible"</span>
+                                            <span class="attr-html"> content</span>
+                                            <span>=</span>
+                                            <span class="string">"IE=edge"</span>
+                                            <span>></span>
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="line">
+                                    <span class="line-number"></span>
+                                    <span class="language-html">
+                                        <span class="token tag">
+                                            <span>  <</span>
+                                            <span>meta </span>
+                                            <span class="attr-html">name</span>
+                                            <span>=</span>
+                                            <span class="string">"viewport"</span>
+                                            <span class="attr-html"> content</span>
+                                            <span>=</span>
+                                            <span class="string">"width=device-width, initial-scale=1.0"</span>
+                                            <span>></span>
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="line">
+                                    <span class="line-number"></span>
+                                    <span class="language-html">
+                                        <span class="token tag">
+                                            <span>  <</span>
+                                            <span>title></span>
+                                        </span>
+                                        <span>LevelUp Front TUTORIAL</span>
+                                        <span class="token tag">
+                                            <span><</span>
+                                            <span>/title></span>
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="line">
+                                    <span class="line-number"></span>
+                                    <span class="language-html">
+                                        <span class="token tag">
+                                            <span><</span>
+                                            <span>/head></span>
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="line">
+                                    <span class="line-number"></span>
+                                    <span class="language-html">
+                                        <span class="token tag">
+                                            <span><</span>
+                                            <span>body></span>
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="line">
+                                    <span class="line-number"></span>
+                                    <span class="language-html">
+                                         <span class="token tag">
+                                            <span>  <</span>
+                                            <span>h1></span>
+                                        </span>
+                                        <span>Titulo con display Block</span>
+                                        <span class="token tag">
+                                            <span><</span>
+                                            <span>/h1></span>
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="line">
+                                    <span class="line-number"></span>
+                                    <span class="language-html">
+                                         <span class="token tag">
+                                            <span>  <</span>
+                                            <span>p></span>
+                                        </span>
+                                        <span>Parrafo con display Block. El parrafo normalmente ocupa mas que el titulo.</span>
+                                        <span class="token tag">
+                                            <span><</span>
+                                            <span>/p></span>
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="line">
+                                    <span class="line-number"></span>
+                                    <span class="language-html">
+                                        <span class="token tag">
+                                            <span><</span>
+                                            <span>/body></span>
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="line">
+                                    <span class="line-number"></span>
+                                    <span class="language-html">
+                                        <span class="token tag">
+                                            <span><</span>
+                                            <span>/html></span>
+                                        </span>
+                                    </span>
+                                </div>
+                            </code>
+                        </pre>
+                        <pre data-label="style.css">
+                            <code>
+                                <div class="line">
+                                    <span class="line-number"></span>
+                                    <span class="language-css">
+                                        <span class="token"><span class="css-selector">body</span> {</span>
+                                    </span>
+                                </div>
+                                <div class="line">
+                                    <span class="line-number"></span>
+                                    <span class="language-css">
+                                        <span class="token">    display: <span class="css-medida">flex</span>;</span>
+                                    </span>
+                                </div>
+                                <div class="line">
+                                    <span class="line-number"></span>
+                                    <span class="language-css">
+                                        <span class="token">}</span>
+                                    </span>
+                                </div>
+                                <div class="line">
+                                    <span class="line-number"></span>
+                                    <span class="language-css">
+                                        <span class="token"><span class="css-selector">div</span> {</span>
+                                    </span>
+                                </div>
+                                <div class="line">
+                                    <span class="line-number"></span>
+                                    <span class="language-css">
+                                        <span class="token">    background-color: <span class="css-number">#85d996</span>;</span>
+                                    </span>
+                                </div>
+                                <div class="line">
+                                    <span class="line-number"></span>
+                                    <span class="language-css">
+                                        <span class="token">}</span>
+                                    </span>
+                                </div>
+                                <div class="line">
+                                    <span class="line-number"></span>
+                                    <span class="language-css">
+                                        <span class="token"><span class="css-selector">p</span> {</span>
+                                    </span>
+                                </div>
+                                <div class="line">
+                                    <span class="line-number"></span>
+                                    <span class="language-css">
+                                        <span class="token">    background-color: <span class="css-number">#fb586c</span>;</span>
+                                    </span>
+                                </div>
+                                <div class="line">
+                                    <span class="line-number"></span>
+                                    <span class="language-css">
+                                        <span class="token">}</span>
+                                    </span>
+                                </div>
+                            </code>
+                        </pre>
+                    </figure>
+                </div>
+                <div class="screen">
+                    <div class="body" style="display: flex">
+                        <h1 style="background-color: #85d996">El padre de este titulo tiene display flex</h1>
+                        <p style="background-color: #fb586c">Parrafo con display Block. El parrafo normalmente ocupa mas que el titulo.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="separator"></div>
+            <div class="separator"></div>
+            <div class="grid">
+                <div>
+                    <p class="display-type">GRID</p>
+                    <p class="explicacion-grande">Un elemento con display grid, colocará a sus elementos hijos en disposicion de una malla.</p>
+                    <figure class="coding">
+                        <div class="files-container">
+                            <ul>
+                                <li><button class="active">index.html</button></li>
+                                <li><button>style.css</button></li>
+                            </ul>
+                        </div>
+                        <pre class="show" data-label="index.html">
+                            <code>
+                                <div class="line">
+                                    <span class="line-number"></span>
+                                    <span class="language-html">
+                                        <span class="token comment"><span><</span>!DOCTYPE html></span>
+                                    </span>
+                                </div>
+                                <div class="line">
+                                    <span class="line-number"></span>
+                                    <span class="language-html">
+                                        <span class="token tag">
+                                            <span><</span>
+                                            <span>html</span>
+                                            <span class="attr-html"> language</span>
+                                            <span>=</span>
+                                            <span class="string">"es"</span>
+                                            <span>></span>
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="line">
+                                    <span class="line-number"></span>
+                                    <span class="language-html">
+                                        <span class="token tag">
+                                            <span><</span>
+                                            <span>head></span>
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="line">
+                                    <span class="line-number"></span>
+                                    <span class="language-html">
+                                        <span class="token tag">
+                                            <span>  <</span>
+                                            <span>meta </span>
+                                            <span class="attr-html">charset</span>
+                                            <span>=</span>
+                                            <span class="string">"UTF-8"</span>
+                                            <span>></span>
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="line">
+                                    <span class="line-number"></span>
+                                    <span class="language-html">
+                                        <span class="token tag">
+                                            <span>  <</span>
+                                            <span>meta </span>
+                                            <span class="attr-html">http-equiv</span>
+                                            <span>=</span>
+                                            <span class="string">"X-UA-Compatible"</span>
+                                            <span class="attr-html"> content</span>
+                                            <span>=</span>
+                                            <span class="string">"IE=edge"</span>
+                                            <span>></span>
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="line">
+                                    <span class="line-number"></span>
+                                    <span class="language-html">
+                                        <span class="token tag">
+                                            <span>  <</span>
+                                            <span>meta </span>
+                                            <span class="attr-html">name</span>
+                                            <span>=</span>
+                                            <span class="string">"viewport"</span>
+                                            <span class="attr-html"> content</span>
+                                            <span>=</span>
+                                            <span class="string">"width=device-width, initial-scale=1.0"</span>
+                                            <span>></span>
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="line">
+                                    <span class="line-number"></span>
+                                    <span class="language-html">
+                                        <span class="token tag">
+                                            <span>  <</span>
+                                            <span>title></span>
+                                        </span>
+                                        <span>LevelUp Front TUTORIAL</span>
+                                        <span class="token tag">
+                                            <span><</span>
+                                            <span>/title></span>
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="line">
+                                    <span class="line-number"></span>
+                                    <span class="language-html">
+                                        <span class="token tag">
+                                            <span><</span>
+                                            <span>/head></span>
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="line">
+                                    <span class="line-number"></span>
+                                    <span class="language-html">
+                                        <span class="token tag">
+                                            <span><</span>
+                                            <span>body></span>
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="line">
+                                    <span class="line-number"></span>
+                                    <span class="language-html">
+                                         <span class="token tag">
+                                            <span>  <</span>
+                                            <span>h1></span>
+                                        </span>
+                                        <span>Titulo con display Block</span>
+                                        <span class="token tag">
+                                            <span><</span>
+                                            <span>/h1></span>
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="line">
+                                    <span class="line-number"></span>
+                                    <span class="language-html">
+                                         <span class="token tag">
+                                            <span>  <</span>
+                                            <span>p></span>
+                                        </span>
+                                        <span>Parrafo con display Block. El parrafo normalmente ocupa mas que el titulo.</span>
+                                        <span class="token tag">
+                                            <span><</span>
+                                            <span>/p></span>
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="line">
+                                    <span class="line-number"></span>
+                                    <span class="language-html">
+                                         <span class="token tag">
+                                            <span>  <</span>
+                                            <span>p></span>
+                                        </span>
+                                        <span>Parrafo con display Block. El parrafo normalmente ocupa mas que el titulo.</span>
+                                        <span class="token tag">
+                                            <span><</span>
+                                            <span>/p></span>
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="line">
+                                    <span class="line-number"></span>
+                                    <span class="language-html">
+                                         <span class="token tag">
+                                            <span>  <</span>
+                                            <span>p></span>
+                                        </span>
+                                        <span>Parrafo con display Block. El parrafo normalmente ocupa mas que el titulo.</span>
+                                        <span class="token tag">
+                                            <span><</span>
+                                            <span>/p></span>
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="line">
+                                    <span class="line-number"></span>
+                                    <span class="language-html">
+                                         <span class="token tag">
+                                            <span>  <</span>
+                                            <span>p></span>
+                                        </span>
+                                        <span>Parrafo con display Block. El parrafo normalmente ocupa mas que el titulo.</span>
+                                        <span class="token tag">
+                                            <span><</span>
+                                            <span>/p></span>
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="line">
+                                    <span class="line-number"></span>
+                                    <span class="language-html">
+                                        <span class="token tag">
+                                            <span><</span>
+                                            <span>/body></span>
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="line">
+                                    <span class="line-number"></span>
+                                    <span class="language-html">
+                                        <span class="token tag">
+                                            <span><</span>
+                                            <span>/html></span>
+                                        </span>
+                                    </span>
+                                </div>
+                            </code>
+                        </pre>
+                        <pre data-label="style.css">
+                            <code>
+                                <div class="line">
+                                    <span class="line-number"></span>
+                                    <span class="language-css">
+                                        <span class="token"><span class="css-selector">body</span> {</span>
+                                    </span>
+                                </div>
+                                <div class="line">
+                                    <span class="line-number"></span>
+                                    <span class="language-css">
+                                        <span class="token">    display: <span class="css-medida">grid</span>;</span>
+                                    </span>
+                                </div>
+                                <div class="line">
+                                    <span class="line-number"></span>
+                                    <span class="language-css">
+                                        <span class="token">    grid-template-columns: <span class="css-selector">repeat</span>(<span class="css-number">3</span>,<span class="css-number">1</span><span class="css-selector">fr</span>);</span>
+                                    </span>
+                                </div>
+                                <div class="line">
+                                    <span class="line-number"></span>
+                                    <span class="language-css">
+                                        <span class="token">}</span>
+                                    </span>
+                                </div>
+                                <div class="line">
+                                    <span class="line-number"></span>
+                                    <span class="language-css">
+                                        <span class="token"><span class="css-selector">div</span> {</span>
+                                    </span>
+                                </div>
+                                <div class="line">
+                                    <span class="line-number"></span>
+                                    <span class="language-css">
+                                        <span class="token">    background-color: <span class="css-number">#85d996</span>;</span>
+                                    </span>
+                                </div>
+                                <div class="line">
+                                    <span class="line-number"></span>
+                                    <span class="language-css">
+                                        <span class="token">}</span>
+                                    </span>
+                                </div>
+                                <div class="line">
+                                    <span class="line-number"></span>
+                                    <span class="language-css">
+                                        <span class="token"><span class="css-selector">p</span> {</span>
+                                    </span>
+                                </div>
+                                <div class="line">
+                                    <span class="line-number"></span>
+                                    <span class="language-css">
+                                        <span class="token">    background-color: <span class="css-number">#fb586c</span>;</span>
+                                    </span>
+                                </div>
+                                <div class="line">
+                                    <span class="line-number"></span>
+                                    <span class="language-css">
+                                        <span class="token">}</span>
+                                    </span>
+                                </div>
+                            </code>
+                        </pre>
+                    </figure>
+                </div>
+                <div class="screen">
+                    <div class="body" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2em">
+                        <h1 style="background-color: #85d996">El padre de este titulo tiene display flex</h1>
+                        <p style="background-color: #fb586c">Parrafo con display Block. El parrafo normalmente ocupa mas que el titulo.</p>
+                        <p style="background-color: #fb586c">Parrafo con display Block. El parrafo normalmente ocupa mas que el titulo.</p>
+                        <p style="background-color: #fb586c">Parrafo con display Block. El parrafo normalmente ocupa mas que el titulo.</p>
+                        <p style="background-color: #fb586c">Parrafo con display Block. El parrafo normalmente ocupa mas que el titulo.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="separator"></div>
+            <div class="separator"></div>
         </section>
     </div>
 </body>

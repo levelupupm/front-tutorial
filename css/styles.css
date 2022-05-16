@@ -290,12 +290,15 @@ h2 {
 }
 pre {
     counter-reset: lines;
-    display: flex;
     flex-direction: column;
     padding: 12px 0;
     margin-top: 0;
     min-width: 100%;
     overflow-x: scroll;
+    display: none;
+}
+pre.show {
+    display: flex;
 }
 pre::-webkit-scrollbar {
     height: 9px;
@@ -438,4 +441,104 @@ code span{
 }
 #grafico-css{
     color: #808595;
+}
+.css-structure{
+    aspect-ratio: 4/3;
+    padding: 80px;
+    border: 2px dashed;
+}
+#estructura-css .flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.css-structure p{
+    background-color: #a4cdfe;
+    border: 2px dashed;
+}
+#css-padding {
+    background-color: #85d996;
+
+}
+#css-border{
+    background-color: #3C4043;
+    padding: 40px;
+}
+
+#css-margin {
+    background-color: #f8b886;
+}
+#estructura-css .grid{
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+#estructura-css .bloque{
+    background-color: #F3F3F5;
+}
+#atributo-css-animado {
+    font-size: 120px;
+}
+#atributo-css-animado:before{
+    content: 'CONTENT';
+    animation: animacion-css-estructura 8s infinite;
+}
+@keyframes animacion-css-estructura {
+    0%{
+        content: 'CONTENT';
+        color: #a4cdfe;
+    }
+    24%{
+        content: 'CONTENT';
+        color: #a4cdfe;
+    }
+    25%{
+        content: 'PADDING';
+        color: #85d996;
+    }
+    49%{
+        content: 'PADDING';
+        color: #85d996;
+    }
+    50%{
+        content: 'BORDER';
+        color: #3C4043;
+    }
+    74%{
+        content: 'BORDER';
+        color: #3C4043;
+    }
+    75%{
+        content: "MARGIN";
+        color: #f8b886;
+    }
+    99%{
+        content: "MARGIN";
+        color: #f8b886;
+    }
+    100%{
+        content: 'CONTENT';
+        color: #a4cdfe;
+    }
+}
+#disposicion-css{
+    background: #e7ebed;
+}
+#disposicion-css .grid{
+    grid-template-columns: repeat(2,1fr);
+    gap: 24px;
+    position: relative;
+}
+.display-type {
+    font-size: 60px;
+    font-weight: 700;
+}
+#disposicion-css .flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+#disposicion-css .explicacion-grande{
+    margin-bottom: 40px;
 }
