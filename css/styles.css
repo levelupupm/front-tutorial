@@ -542,3 +542,46 @@ code span{
 #disposicion-css .explicacion-grande{
     margin-bottom: 40px;
 }
+#position-css {
+    background: #e7ebed;
+}
+#position-css .grid{
+    grid-template-columns: repeat(2,1fr);
+    gap: 24px;
+}
+#position-css .screen .body{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    margin: 0;
+    margin-top: 8px;
+    padding: 0 8px;
+}
+#position-css .screen .body .contenido{
+    height: 300%;
+}
+#position-css .banner-top {
+    position: relative;
+    top: 40px;
+    height: 300px;
+    background-color: #a4cdfe;
+    border-radius: 9px;
+}
+#elemento-absolute {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 80px;
+    width: 220px;
+    border-radius: 9px;
+    background-color: #f8b886;
+}
+#elemento-sticky {
+    position: sticky;
+    top: 0;
+    height: 100px;
+    width: 300px;
+    background-color: #85d996;
+    border-radius: 9px;
+}
