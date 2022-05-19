@@ -585,3 +585,32 @@ code span{
     background-color: #85d996;
     border-radius: 9px;
 }
+#boton-taller {
+    display: flex;
+    justify-content: center;
+    padding: 80px 0;
+}
+#boton-taller a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    background-color: #F3F3F5;
+    color: #808595;
+    padding: 3px 15px;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 16px;
+    transition: background-color .2s ease-in-out, color .2s ease-in-out;
+}
+#boton-taller a:hover {
+    background-color: #3474E0;
+    color: #ffffff;
+}
+#boton-taller a svg {
+    width: 30px;
+    fill: #808595;
+}
+#boton-taller a:hover svg {
+    fill: #ffffff;
+}
